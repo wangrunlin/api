@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/app.ts',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
@@ -24,7 +24,7 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   output: {
-    filename: 'app.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   target: 'node',
