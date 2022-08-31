@@ -1,4 +1,11 @@
 {
+	"name": "leo-api",
+	"description": "leo's custom api",
+	"author": {
+		"name": "Leo Wang",
+		"email": "me@alin.run",
+		"url": "https://wangrunlin.com"
+	},
 	"jest": {
 		"transform": {
 			"\\.[jt]sx?$": "babel-jest"
@@ -7,8 +14,12 @@
 	"scripts": {
 		"babel:build": "npx babel src --out-dir dist --extensions \".ts\"",
 		"babel:dev": "pnpm babel:build && pnpm start",
-		"test": "jest",
-		"start": "node dist/index.js"
+		"webpack:build": "webpack",
+		"webpack:watch": "webpack --watch",
+		"webpack:dev": "webpack && pnpm start",
+		"start": "node dist/index.js",
+		"lint": "eslint src --ext .ts",
+		"test": "jest"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.18.10",
