@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"koa": "^2.13.4",
+		"jest": "^29.0.1"
+	}
+}
