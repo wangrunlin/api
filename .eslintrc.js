@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'airbnb-base',
@@ -9,16 +9,20 @@ module.exports = {
   ],
   overrides: [
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest'
+    ecmaVersion: 'latest',
   },
   plugins: [
-      '@typescript-eslint'
+    '@typescript-eslint',
   ],
   rules: {
     'linebreak-style': 'off',
     'no-console': 'off',
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-var-requires': 'off',
+    'import/no-extraneous-dependencies': [2, {
+      devDependencies: true,
+      peerDependencies: true,
+    }],
   },
 };
