@@ -5,12 +5,17 @@
 		}
 	},
 	"scripts": {
-		"start": "node src/app.ts",
-		"test": "jest"
+		"babel:build": "npx babel src --out-dir dist --extensions \".ts\"",
+		"babel:dev": "pnpm babel:build && pnpm start",
+		"test": "jest",
+		"start": "node dist/app.js"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.18.10",
 		"@babel/core": "^7.18.13",
+		"@babel/plugin-proposal-object-rest-spread": "^7.18.9",
 		"@babel/preset-env": "^7.18.10",
+		"@babel/preset-typescript": "^7.18.6",
 		"@jest/globals": "^29.0.1",
 		"@types/koa": "^2.13.5",
 		"babel-jest": "^29.0.1",
