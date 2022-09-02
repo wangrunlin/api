@@ -9,6 +9,10 @@ module.exports = {
   ],
   overrides: [
   ],
+  ignorePatterns: [
+    'node_modules/',
+    'dist/',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -24,5 +28,10 @@ module.exports = {
       devDependencies: true,
       peerDependencies: true,
     }],
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {}, // this loads <rootDir>/tsconfig.json to eslint
+    },
   },
 };
