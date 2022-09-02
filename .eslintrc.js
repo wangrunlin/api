@@ -24,6 +24,14 @@ module.exports = {
     'linebreak-style': 'off',
     'no-console': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+      },
+    ],
     'import/no-extraneous-dependencies': [2, {
       devDependencies: true,
       peerDependencies: true,
