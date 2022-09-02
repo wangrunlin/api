@@ -11,6 +11,12 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@babel/proposal-object-rest-spread"
+    "@babel/proposal-object-rest-spread",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@src": "./src"
+      }
+    }]
   ]
 }
