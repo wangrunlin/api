@@ -17,6 +17,8 @@
 		"webpack:build": "webpack",
 		"webpack:watch": "webpack --watch",
 		"webpack:dev": "webpack && pnpm start",
+		"vercel-build": "pnpm webpack:dev",
+		"dev": "pnpm webpack:dev",
 		"start": "node dist/index.js",
 		"lint": "eslint src --ext .ts",
 		"test": "jest"
