@@ -19,7 +19,7 @@
 		"webpack:dev": "webpack && node dist/index.js",
 		"vercel-build": "pnpm webpack:dev",
 		"dev": "pnpm webpack:dev",
-		"start": "webpack && node dist/index.js",
+		"start": "npx webpack && node dist/index.js",
 		"lint": "eslint src --ext .ts",
 		"test": "jest"
 	},
