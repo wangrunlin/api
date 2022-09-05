@@ -38,3 +38,15 @@ describe('Testing to see app is works', () => {
     expect(res.body.message).toBe('ok');
   });
 });
+
+describe('Testing to see random image is works', () => {
+  it('Testing random image is works', async () => {
+    const res = await request(app.callback()).get('/random/image');
+
+    expect(res.status).toBe(200);
+    expect(res.body.code).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.message).toBe('ok');
+    expect(res.body.data).toMatch(/^https?:\/\/.*/);
+  });
+});
