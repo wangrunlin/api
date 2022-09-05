@@ -23,4 +23,14 @@ router.get('/test/json', (ctx) => {
   };
 });
 
+// random image
+router.get('/random/image', (ctx) => {
+  ctx.body = {
+    code: 200,
+    success: true,
+    message: 'ok',
+    data: 'https://api.llin.cc',
+  };
+});
+
 export default router;
