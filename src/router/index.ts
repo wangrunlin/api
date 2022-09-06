@@ -1,4 +1,5 @@
 import Router from 'koa-router';
+import getRandomPhotos from '@src/util/unsplash-js';
 
 const router = new Router();
 
@@ -20,6 +21,18 @@ router.get('/test/json', (ctx) => {
     code: 200,
     success: true,
     message: 'ok',
+  };
+});
+
+// random image
+router.get('/random/image', async (ctx) => {
+  const data = await getRandomPhotos();
+
+  ctx.body = {
+    code: 200,
+    success: true,
+    message: 'ok',
+    data,
   };
 });
 
