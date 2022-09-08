@@ -4,7 +4,7 @@
 ## out dir
 dist/
 
-## secure config file
+## local config file
 .env
 .env*
 
