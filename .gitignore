@@ -1,8 +1,21 @@
+## MacOS file
 .DS_Store
+
+## out dir
+dist/
+
+## secure config file
 .env
 .env*
-node_modules/
+
+## IDE or editor
 .idea/
-dist/
 .vscode
-pnpm-loc.yaml
+
+## node
+node_modules/
+
+## package manger lock file
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
