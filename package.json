@@ -13,12 +13,12 @@
 	},
 	"scripts": {
 		"babel:build": "npx babel src --out-dir dist --extensions \".ts\"",
-		"babel:dev": "pnpm babel:build && node dist/index.js",
+		"babel:dev": "npm run babel:build && node dist/index.js",
 		"webpack:build": "webpack",
 		"webpack:watch": "webpack --watch",
 		"webpack:dev": "webpack && node dist/index.js",
-		"vercel-build": "pnpm webpack:dev",
-		"dev": "pnpm webpack:dev",
+		"vercel-build": "npm run webpack:dev",
+		"dev": "npm run webpack:dev",
 		"start": "npx webpack && node dist/index.js",
 		"lint": "eslint src --ext .ts",
 		"test": "jest"
