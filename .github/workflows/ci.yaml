@@ -18,3 +18,5 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm test
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
