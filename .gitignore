@@ -16,6 +16,5 @@ dist/
 node_modules/
 
 ## package manger lock file
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
