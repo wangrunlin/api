@@ -18,3 +18,7 @@ node_modules/
 ## package manger lock file
 yarn.lock
 pnpm-lock.yaml
+
+## Coveralls
+coverage/
+.coveralls.yml
