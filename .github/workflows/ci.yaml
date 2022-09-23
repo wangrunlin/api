@@ -21,13 +21,8 @@ jobs:
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
-  finish:
-    needs: test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Coveralls Finished
+      - run: npx jest --coverage
+      - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.github_token }}
-          parallel-finished: true
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
