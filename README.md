@@ -14,26 +14,14 @@
   </a>
 </p>
 
-自定义 API
+self-hosting API
+
+
+## Usage
+
+[![Edit self-hosting API](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/wangrunlin/api)
 
 
 ## Todo List
 
-- [x] 随机图片 `/random/image`
-- [ ] [IP](#23)
-- [ ] 文字图片
-- [ ] 二维码生成
-- [ ] 星座运势
-- [ ] 航班动态
-- [ ] 简体/繁体/火星 字体转换
-- [ ] IP 地址所属区域
-- [ ] 语言识别
-- [ ] OCR 识别
-	 - [ ] 通用印刷体
-     - [ ] 证件
-         - [ ] 身份证
-         - [ ] 银行卡
-         - [ ] 营业执照
-- [ ] Short URL
-- [ ] Mock Data
-- [ ] 随机一言
+See: https://github.com/wangrunlin.com/api/issue/63
