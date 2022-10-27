@@ -1,21 +1,15 @@
 {
-	"name": "leo-api",
-	"description": "leo's custom api",
+	"name": "self-hosting-api",
+	"description": "Self Hosting API",
 	"author": {
 		"name": "Leo Wang",
 		"email": "me@alin.run",
 		"url": "https://wangrunlin.com"
 	},
 	"scripts": {
-		"babel:build": "npx babel src --out-dir dist --extensions \".ts\"",
-		"babel:dev": "npm run babel:build && node dist/index.js",
-		"webpack:build": "webpack",
-		"webpack:watch": "webpack --watch",
-		"webpack:dev": "webpack && node dist/index.js",
-		"vercel-build": "npm run webpack:dev",
-		"dev": "npm run webpack:dev",
+		"dev": "npx webpack && node dist/index.js",
 		"start": "npx webpack && node dist/index.js",
-		"lint": "eslint src --ext .ts",
+		"lint": "eslint . --ext .ts",
 		"test": "jest",
 		"prepare": "husky install"
 	},
