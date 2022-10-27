@@ -16,21 +16,21 @@ describe('Testing to see app is works', () => {
 
   // test
   it('Test application is work', async () => {
-    const res = await request(app.callback()).get('/test');
+    const res = await request(app.callback()).get('/t');
 
     expect(res.status).toBe(200);
     expect(res.text).toBe('ok');
   });
 
   it('Test text', async () => {
-    const res = await request(app.callback()).get('/test/text');
+    const res = await request(app.callback()).get('/t/text');
 
     expect(res.status).toBe(200);
     expect(res.text).toBe('This is a text.');
   });
 
   it('Test json', async () => {
-    const res = await request(app.callback()).get('/test/json');
+    const res = await request(app.callback()).get('/t/json');
 
     expect(res.status).toBe(200);
     expect(res.body.code).toBe(200);
