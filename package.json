@@ -7,8 +7,9 @@
 		"url": "https://wangrunlin.com"
 	},
 	"scripts": {
-		"dev": "npx webpack && node dist/index.js",
-		"start": "npx webpack && node dist/index.js",
+		"build": "webpack",
+		"dev": "ts-node-dev src/",
+		"start": "node dist/",
 		"lint": "eslint . --ext .ts",
 		"test": "jest",
 		"prepare": "husky install"
