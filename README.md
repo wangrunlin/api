@@ -24,4 +24,4 @@ self-hosting API
 
 ## Todo List
 
-See: https://github.com/wangrunlin/api/issue/63
+See: https://github.com/wangrunlin/api/issues/63
